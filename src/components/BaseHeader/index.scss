@@ -1,0 +1,78 @@
+.header {
+    background-color: #fff;
+    padding: 40px 0;
+
+    ul {
+        list-style: none;
+    }
+
+    a {
+        text-decoration: none;
+    }
+
+    &__body,
+    &__menu,
+    &__list,
+    &__lang,
+    &__right {
+        display: flex;
+        align-items: center;
+    }
+
+    &__menu {
+        flex-grow: 1;
+        justify-content: space-between;
+        margin-left: 80px;
+    }
+
+    &__logo {
+        font-size: 16px;
+        line-height: 24px;
+        color: #000421;
+    }
+
+    &__list {
+        li + li {
+            margin-left: 20px;
+        }
+    }
+
+    &__link {
+        font-size: 16px;
+        line-height: 24px;
+        color: #000421;
+    }
+
+    &__lang {
+        margin-right: 30px;
+    }
+
+    &__lang-item {
+        border: none;
+        outline: none;
+        background-color: transparent;
+        font-size: 16px;
+        line-height: 24px;
+        color: #000421;
+        cursor: pointer;
+        font-weight: 500;
+        transition: all 0.2s ease;
+
+        &:hover,
+        &--active {
+            color: #2680EB;
+        }
+    }
+
+    &__phone {
+        font-size: 16px;
+        line-height: 24px;
+        color: #000421;
+        display: flex;
+        align-items: center;
+
+        svg {
+            margin-right: 5px;
+        }
+    }
+}
